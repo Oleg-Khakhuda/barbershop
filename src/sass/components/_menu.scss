@@ -1,0 +1,97 @@
+.menu-button {
+    outline: none;
+    border: none;
+    background-color: inherit;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu {
+    width: 40px;
+    height: 40px;
+    outline: none;
+}
+
+.menu-box {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-list {
+    display: flex;
+    margin-left: 54px;
+    margin-right: 40px;
+
+    @media screen and (min-width: 1280px) {
+        margin-right: 322px;
+    }
+}
+
+.menu-item {
+    padding: 16px 0;
+}
+
+.menu-item:not(:last-child) {
+    @media screen and (min-width: 768px) {
+        margin-right: 24px;
+    }
+}
+
+.menu-link {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+
+    &:hover,
+    &:focus {
+        color: #FF6C00;
+    }
+}
+
+.menu-form {
+    
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+.menu-button__online {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 0;
+
+    }
+}
+
+.menu-tel {
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    @media screen and (min-width: 1280px) {
+        margin-right: 40px;
+        order: -1;
+    }
+
+
+}

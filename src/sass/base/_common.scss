@@ -1,0 +1,81 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+    background-color: #212121;
+    color: var(--primary-text-color);
+    font-family: var(--font-family);
+    font-weight: var(--regular-font-weight);
+    font-size: var(--main-font-size);
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+textarea {
+    resize: none;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+        color: var(--hover-color);
+    }
+}
+
+.list {
+    list-style-type: none;
+}
+
+.section {
+    width: 100%;
+
+    @media screen and (max-width: 1199.98px) {
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+    }
+}

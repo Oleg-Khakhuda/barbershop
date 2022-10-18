@@ -1,0 +1,17 @@
+.button {
+    color: var(--primary-write-color);
+    background-color: var(--accent-color);
+    font-weight: var(--semi-bold-font-weight);
+    font-size: var(--secondary-font-size);
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.09em;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+
+    transition: background-color var(--main-transition), box-shadow var(--main-transition);
+}
