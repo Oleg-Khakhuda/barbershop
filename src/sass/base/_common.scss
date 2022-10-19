@@ -1,7 +1,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 body {
-    background-color: #212121;
+    background-color: #ffffff;
     color: var(--primary-text-color);
     font-family: var(--font-family);
     font-weight: var(--regular-font-weight);
@@ -72,10 +72,10 @@ textarea {
     width: 100%;
 
     @media screen and (max-width: 1199.98px) {
-        padding-bottom: 60px;
+        // padding-bottom: 60px;
     }
 
     @media screen and (min-width: 1200px) {
-        padding-bottom: 94px;
+        // padding-bottom: 94px;
     }
 }

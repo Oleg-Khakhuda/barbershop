@@ -10,8 +10,13 @@
     cursor: pointer;
     text-transform: uppercase;
     padding: 12px 20px;
-    border: 1px solid #FF6C00;
+    border: 1px solid var(--bg-color);
     border-radius: 25px;
 
     transition: background-color var(--main-transition), box-shadow var(--main-transition);
+
+    &:hover,
+    &:focus {
+        background-color: var(--bg-color);
+    }
 }

@@ -44,17 +44,17 @@
 }
 
 .menu-link {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
+    font-weight: var(--semi-bold-font-weight);
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.1em;
-    color: #FFFFFF;
+    color: var(--primary-write-color);
+
+    transition: color var(--main-transition), box-shadow var(--main-transition);
 
     &:hover,
     &:focus {
-        color: #FF6C00;
+        color: var(--bg-color);
     }
 }
 
@@ -79,19 +79,24 @@
 
 .menu-tel {
     display: block;
-    font-weight: 600;
+    font-weight: var(--semi-bold-font-weight);
     font-size: 12px;
     line-height: 16px;
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: var(--primary-write-color);
+
+    transition: color var(--main-transition), box-shadow var(--main-transition);
+
+    &:hover,
+    &:focus {
+        color: var(--bg-color);
+    }
 
     @media screen and (min-width: 1280px) {
         margin-right: 40px;
         order: -1;
     }
-
-
 }
