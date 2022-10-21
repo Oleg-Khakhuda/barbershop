@@ -1,0 +1,114 @@
+.mobile-menu { 
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 337px;
+    height: 100vh;
+    background-color: var(--primary-write-color);
+    
+    flex-direction: column;
+    
+    padding: 118px 40px 118px 40px;
+
+    @media screen and (max-width: 767.98px) {
+        &.is-open {
+            position: fixed;
+            display: flex;
+            z-index: 1;
+        }
+        }
+}
+
+.mobile-list {
+    margin-bottom: 64px;
+}
+
+.mobile-menu__item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.mobile-menu-link {
+    font-weight: var(--semi-bold-font-weight);
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    transition: color var(--main-transition), box-shadow var(--main-transition);
+
+    color: #303030;
+
+    &:hover,
+    &:focus {
+        color: var(--bg-color);
+    }
+
+    &.current {
+        color: var(--bg-color);
+    }
+}
+
+
+.mobile-menu__form {
+    margin-bottom: 64px;
+}
+
+.mobile-tel {
+    font-weight: var(--semi-bold-font-weight);
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #303030;
+
+    transition: color var(--main-transition), box-shadow var(--main-transition);
+
+    &:hover,
+    &:focus {
+        color: var(--bg-color);
+    }
+}
+
+.mobile-button__online {
+    margin-top: 24px;
+    color: #303030;
+
+}
+
+.mobile-social__list {
+    position: relative;
+    margin-left: 100px;
+    
+}
+
+.mobile-social__item:not(:last-child) {
+    margin-bottom: 24px;
+
+    &:first-child::before {
+        content: '';
+        position: absolute;
+        top: 15px;
+        left: -100px;
+        width: 60px;
+        height: 1px;
+        background: #303030;
+    }
+}
+
+.mobile-social__link {
+    font-weight: var(--semi-bold-font-weight);
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    
+    color: #303030;
+
+    transition: color var(--main-transition), box-shadow var(--main-transition);
+
+    &:hover,
+    &:focus {
+        color: var(--bg-color);
+    }
+}
