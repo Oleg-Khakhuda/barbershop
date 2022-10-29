@@ -1,65 +1,8 @@
-.section {
-    margin-top: -103px;
-    
-    @media screen and (min-width: 768px) {
-            margin-top: -115px;
-        }
-}
-
 .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/hero/mobile/hero-mobile.jpg);
+    margin-left: 96px;
 
-        @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                        rgba(47, 48, 58, 0.4)),
-                    url(../images/hero/mobile/hero-mobile@2x.jpg);
-            }
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-   
-    height: 580px;
-    
-    padding-top: 208px; 
-    padding-bottom: 183px;
-
-    @media screen and (min-width: 768px) {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
-                url(../images/hero/tablet/hero-tablet.jpg);
-        
-        @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                        rgba(47, 48, 58, 0.4)),
-                    url(../images/hero/tablet/hero-tablet@2x.jpg);
-            }
-        
-        height: 609px;
-        padding-top: 272px;
-        padding-bottom: 245px;
-    }
-
-        @media screen and (min-width: 1280px) {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
-                url(../images/hero/desktop/hero-desktop.jpg);
-    
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                        rgba(47, 48, 58, 0.4)),
-                    url(../images/hero/desktop/hero-desktop@2x.jpg);
-            }
-
-            padding-bottom: 206px;
+    @media screen and (max-width: 768px) {
+           margin-left: 7px;
         }
 }
 
@@ -67,16 +10,29 @@
     font-weight: var(--semi-bold-font-weight);
     font-size: 11px;
     line-height: 15px;
+    text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    text-align: center;
     color: rgba(157, 164, 189, 0.6);
+
+    display: flex;
+    align-items: center;
 
     margin-bottom: 20px;
 
     @media screen and (min-width: 768px) {
             text-align: start;
         }
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 60px;
+        height: 1px;
+        background-color: rgba(157, 164, 189, 0.6);
+      
+        margin-right: 20px;
+    }
 }
 
 .hero__title {
