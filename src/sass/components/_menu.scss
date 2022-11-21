@@ -13,6 +13,10 @@
     @media screen and (max-width: 768px) {
         display: none;
     }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 204px;
+    }
 }
 
 .menu__list {
